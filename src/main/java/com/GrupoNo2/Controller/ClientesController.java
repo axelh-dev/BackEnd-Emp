@@ -34,15 +34,6 @@ public class ClientesController {
     return clientesSer.buscarId(nit);
     }
     
-    @DeleteMapping
-    public void eliminar(@RequestParam Integer nit){
-    clientesSer.eliminar(nit);
-    }
-    
-    @PutMapping
-    public Clientes actualizar(@RequestBody Clientes empo){
-    return clientesSer.actualizar(empo);
-    }
-    
+
 }
 

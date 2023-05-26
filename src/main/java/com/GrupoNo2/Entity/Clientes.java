@@ -16,14 +16,18 @@ public class Clientes {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idClie;
 
-    private String nombreClient;
-    private String apellidoClient;
+    private Integer idClie;
+    private String nombre;
+    private String apellido;
     private String gmail;
     private String numtelefono;
-    private String contraseña;
     private String fechaNac;
+    private String fechaPedido;
+    private boolean tipoPlan_a;
+    private boolean tipoPlan_b;
+    private boolean tipoPlan_c;
+    private int numPedido;
 
     public Integer getIdClie() {
         return idClie;
@@ -33,36 +37,20 @@ public class Clientes {
         this.idClie = idClie;
     }
 
-    public String getFechaNac() {
-        return fechaNac;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setFechaNac(String fechaNac) {
-        this.fechaNac = fechaNac;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getApellidoClient() {
-        return apellidoClient;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setApellidoClient(String apellidoClient) {
-        this.apellidoClient = apellidoClient;
-    }
-
-    public String getContraseña() {
-        return contraseña;
-    }
-
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
-    }
-
-    public String getNombreClient() {
-        return nombreClient;
-    }
-
-    public void setNombreClient(String nombreClient) {
-        this.nombreClient = nombreClient;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public String getGmail() {
@@ -80,5 +68,56 @@ public class Clientes {
     public void setNumtelefono(String numtelefono) {
         this.numtelefono = numtelefono;
     }
+
+    public String getFechaNac() {
+        return fechaNac;
+    }
+
+    public void setFechaNac(String fechaNac) {
+        this.fechaNac = fechaNac;
+    }
+
+    public String getFechaPedido() {
+        return fechaPedido;
+    }
+
+    public void setFechaPedido(String fechaPedido) {
+        this.fechaPedido = fechaPedido;
+    }
+
+    public boolean isTipoPlan_a() {
+        return tipoPlan_a;
+    }
+
+    public void setTipoPlan_a(boolean tipoPlan_a) {
+        this.tipoPlan_a = tipoPlan_a;
+    }
+
+    public boolean isTipoPlan_b() {
+        return tipoPlan_b;
+    }
+
+    public void setTipoPlan_b(boolean tipoPlan_b) {
+        this.tipoPlan_b = tipoPlan_b;
+    }
+
+    public boolean isTipoPlan_c() {
+        return tipoPlan_c;
+    }
+
+    public void setTipoPlan_c(boolean tipoPlan_c) {
+        this.tipoPlan_c = tipoPlan_c;
+    }
+
+    public int getNumPedido() {
+        return numPedido;
+    }
+
+    public void setNumPedido(int numPedido) {
+        this.numPedido = numPedido;
+    }
+    
+    
+    
 
 }

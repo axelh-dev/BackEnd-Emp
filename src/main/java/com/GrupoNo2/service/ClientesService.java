@@ -19,14 +19,7 @@ public class ClientesService {
     public Clientes Ingresar(Clientes emp){
         return clientesrepo.save(emp);
     }
-    //Actualizar
-     public Clientes actualizar(Clientes emp){
-        return clientesrepo.save(emp);
-    }
-     //Borrar por id
-      public void eliminar(Integer nit){
-        clientesrepo.deleteById(nit);
-    }
+   
     //Buscar ID  
     public Optional <Clientes> buscarId (Integer id){
     return clientesrepo.findById(id);
